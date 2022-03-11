@@ -126,7 +126,7 @@ final class ViewController: UIViewController {
         let halftone = CIFilter(name:"CIDotScreen", parameters: [kCIInputImageKey: blur.outputImage!, kCIInputWidthKey: 20])!
         let blur2 = CIFilter(name:"CIBoxBlur", parameters: [kCIInputImageKey: halftone.outputImage!, kCIInputRadiusKey: 60])!
         let halftone2 = CIFilter(name:"CIDotScreen", parameters: [kCIInputImageKey: blur2.outputImage!, kCIInputWidthKey: 60])!
-        let falseColor = CIFilter(name:"CIFalseColor", parameters: [kCIInputImageKey: halftone2.outputImage!, "inputColor0": CIColor(color: UIColor.init(red: 0.2, green: 0.25, blue: 0.3, alpha: 0.8)),"inputColor1": CIColor(color: UIColor.init(red: 0.8, green: 0.75, blue: 0.75, alpha: 0.8)),])!
+        let falseColor = CIFilter(name:"CIFalseColor", parameters: [kCIInputImageKey: halftone2.outputImage!, "inputColor0": CIColor(color: UIColor.init(red: 0.1, green: 0.1, blue: 0.1, alpha: 0.9)),"inputColor1": CIColor(color: UIColor.init(red: 0.8, green: 0.8, blue: 0.9, alpha: 0.9)),])!
         
         
       //  let filter2 = CIFilter(name: "CIDiscBlur")!                         // 2
