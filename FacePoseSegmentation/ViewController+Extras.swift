@@ -45,7 +45,7 @@ extension ViewController {
             output.setSampleBufferDelegate(self, queue: .main)
             
             self.session?.addOutput(output)
-            output.connections.first?.videoOrientation = .portrait
+            output.connections.first?.videoOrientation = .landscapeLeft
             self.session?.startRunning()
         }
     }

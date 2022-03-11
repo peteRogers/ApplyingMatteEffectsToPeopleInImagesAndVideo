@@ -18,9 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19E1C4FC44A1D12AC2BC8ED1 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		19E1C4FC44A1D12AC2BC8ED1 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		21B33C5DC64CE3D3193BCF2A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D20CDB8980AE9A0B73B60172 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		61C3FF8027DBAAC500F4BC7A /* FacePoseSegmentation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FacePoseSegmentation.entitlements; sourceTree = "<group>"; };
+		D20CDB8980AE9A0B73B60172 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		FA692F90263C5F3F006D2004 /* ViewController+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extras.swift"; sourceTree = "<group>"; };
 		FA692F92263C5F63006D2004 /* ViewController+Metal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Metal.swift"; sourceTree = "<group>"; };
 		FAF0827E2624AFE3005F9EE5 /* FacePoseSegmentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacePoseSegmentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +58,6 @@
 			children = (
 				19E1C4FC44A1D12AC2BC8ED1 /* LICENSE.txt */,
 			);
-			name = LICENSE;
 			path = LICENSE;
 			sourceTree = "<group>";
 		};
@@ -83,6 +83,7 @@
 		FAF082802624AFE3005F9EE5 /* FacePoseSegmentation */ = {
 			isa = PBXGroup;
 			children = (
+				61C3FF8027DBAAC500F4BC7A /* FacePoseSegmentation.entitlements */,
 				FAF082852624AFE3005F9EE5 /* ViewController.swift */,
 				FA692F90263C5F3F006D2004 /* ViewController+Extras.swift */,
 				FA692F92263C5F63006D2004 /* ViewController+Metal.swift */,
@@ -323,9 +324,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FacePoseSegmentation/FacePoseSegmentation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4NY9EY68HK;
 				INFOPLIST_FILE = "$(SRCROOT)/FacePoseSegmentation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,6 +337,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -345,9 +349,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FacePoseSegmentation/FacePoseSegmentation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4NY9EY68HK;
 				INFOPLIST_FILE = "$(SRCROOT)/FacePoseSegmentation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +362,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
